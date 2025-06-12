@@ -15,5 +15,6 @@ def load_data(path):
     print(f"Total loaded of {path}: {len(data)} reviews")
     return pd.DataFrame({'text': data, 'label': labels})
 
-train = load_data('aclImdb/train')
-test = load_data('aclImdb/test')
+if __name__ == "__main__":
+    train = load_data('aclImdb/train')
+    test = load_data('aclImdb/test')
